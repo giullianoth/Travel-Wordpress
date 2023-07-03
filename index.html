@@ -383,12 +383,18 @@
 		href="/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 	<link rel="stylesheet" id="elementor-post-5-css" href="/wp-content/uploads/elementor/css/post-5.css?ver=1687956704"
 		media="all">
-	<link rel="stylesheet" id="elementor-post-6-css" href="/wp-content/uploads/elementor/css/post-6.css?ver=1688240169"
+	<link rel="stylesheet" id="elementor-post-6-css" href="/wp-content/uploads/elementor/css/post-6.css?ver=1688380071"
 		media="all">
 	<link rel="stylesheet" id="hfe-widgets-style-css"
 		href="/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.14" media="all">
+	<link rel="stylesheet" id="font-awesome-5-all-css"
+		href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.14.1" media="all">
+	<link rel="stylesheet" id="font-awesome-4-shim-css"
+		href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.14.1" media="all">
 	<link rel="stylesheet" id="elementor-post-12-css"
 		href="/wp-content/uploads/elementor/css/post-12.css?ver=1687968352" media="all">
+	<link rel="stylesheet" id="elementor-post-317-css"
+		href="/wp-content/uploads/elementor/css/post-317.css?ver=1688381049" media="all">
 	<link rel="stylesheet" id="hello-elementor-css" href="/wp-content/themes/hello-elementor/style.min.css?ver=2.7.1"
 		media="all">
 	<link rel="stylesheet" id="hello-elementor-theme-style-css"
@@ -401,6 +407,8 @@
 	<link rel="stylesheet" id="elementor-icons-fa-solid-css"
 		href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3" media="all">
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<script src="/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.14.1"
+		id="font-awesome-4-shim-js"></script>
 	<script src="/wp-includes/js/jquery/jquery.min.js?ver=3.6.4" id="jquery-core-js"></script>
 	<script src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0" id="jquery-migrate-js"></script>
 	<link rel="https://api.w.org/" href="/wp-json/">
@@ -516,11 +524,26 @@
 		.tr_explore_shadow {
 			background-image: linear-gradient(180deg, hsl(0, 0%, 0%) 5%, hsla(0, 0%, 0%, 0) 40%, hsla(0, 0%, 0%, 0) 60%, hsl(0, 0%, 0%) 92%);
 		}
+
+		/* Join section */
+		.tr_join_image img {
+			transition: transform 0.4s ease;
+		}
+
+		.tr_join_image:hover img {
+			transform: scale(1.2);
+		}
+
+		.tr_join_button button {
+			width: 100%;
+			backdrop-filter: blur(24PX);
+			-webkit-backdrop-filter: blur(24PX);
+		}
 	</style>
 </head>
 
 <body
-	class="home page-template page-template-elementor_header_footer page page-id-6 ehf-header ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-6">
+	class="home page-template page-template-elementor_header_footer page page-id-6 ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-template-full-width elementor-kit-5 elementor-page elementor-page-6">
 	<svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 0 0" width="0" height="0" focusable="false" role="none"
 		style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
 		<defs>
@@ -1219,51 +1242,396 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<footer id="site-footer" class="site-footer dynamic-footer footer-has-copyright" role="contentinfo">
-			<div class="footer-inner">
-				<div class="site-branding show-logo">
+			<div class="elementor-element elementor-element-2d1bc7a e-flex e-con-boxed e-con" data-id="2d1bc7a"
+				data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+				<div class="e-con-inner">
+					<div class="elementor-element elementor-element-3d3f19b e-con-full e-flex e-con" data-id="3d3f19b"
+						data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+						<div class="elementor-element elementor-element-742738f elementor-widget elementor-widget-heading"
+							data-id="742738f" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h1 class="elementor-heading-title elementor-size-default">Your Journey <br>Starts Here
+								</h1>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-5711245 elementor-widget elementor-widget-text-editor"
+							data-id="5711245" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p>Get up to date with the latest <br>travel and information from us.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-da88dc1 elementor-widget elementor-widget-metform"
+							data-id="da88dc1" data-element_type="widget" data-widget_type="metform.default">
+							<div class="elementor-widget-container">
+								<div id="mf-response-props-id-266" data-previous-steps-style="" data-editswitchopen=""
+									data-response_type="alert" data-erroricon="fas fa-exclamation-triangle"
+									data-successicon="fas fa-check" data-messageposition="top"
+									class="   mf-scroll-top-no">
+									<div class="formpicker_warper formpicker_warper_editable"
+										data-metform-formpicker-key="266">
+
+										<div class="elementor-widget-container">
+
+											<div id="metform-wrap-da88dc1-266" class="mf-form-wrapper"
+												data-form-id="266"
+												data-action="http://localhost/travel/wp-json/metform/v1/entries/insert/266"
+												data-wp-nonce="d7415341d4" data-form-nonce="44bd7312d6"
+												data-quiz-summery="false" data-save-progress="false"
+												data-form-type="general-form" data-stop-vertical-effect=""></div>
+
+
+											<!----------------------------- 
+			* controls_data : find the the props passed indie of data attribute
+			* props.SubmitResponseMarkup : contains the markup of error or success message
+			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+		--------------------------- -->
+
+											<script type="text/mf" class="mf-template">
+			function controls_data (value){
+				let currentWrapper = "mf-response-props-id-266";
+				let currentEl = document.getElementById(currentWrapper);
+				
+				return currentEl ? currentEl.dataset[value] : false
+			}
+
+
+			let is_edit_mode = '' ? true : false;
+			let message_position = controls_data('messageposition') || 'top';
+
+			
+			let message_successIcon = controls_data('successicon') || '';
+			let message_errorIcon = controls_data('erroricon') || '';
+			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
+			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
+			
+			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
+
+			
+			return html`
+				<form
+					className="metform-form-content"
+					ref=${parent.formContainerRef}
+					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
+				
+					>
+			
+			
+					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
+					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+
+					<!--------------------------------------------------------
+					*** IMPORTANT / DANGEROUS ***
+					${html``} must be used as in immediate child of "metform-form-main-wrapper"
+					class otherwise multistep form will not run at all
+					---------------------------------------------------------->
+
+					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
+					${html`
+								<div data-elementor-type="wp-post" key="2" data-elementor-id="266" className="elementor elementor-266">
+							<div className="elementor-element elementor-element-80138d0 e-con-full e-flex e-con" data-id="80138d0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<div className="elementor-element elementor-element-1cf1f92 e-con-full e-flex e-con" data-id="1cf1f92" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div className="elementor-element elementor-element-3d9c567 elementor-widget elementor-widget-mf-email" data-id="3d9c567" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}" data-widget_type="mf-email.default">
+				<div className="elementor-widget-container">
+			
+		<div className="mf-input-wrapper">
+			
+			<input 
+				type="email" 
+				 
+				defaultValue="" 
+				className="mf-input " 
+				id="mf-input-email-3d9c567" 
+				name="mf-email" 
+				placeholder="${ parent.decodeEntities(`Enter your email`) } " 
+				 
+				onBlur=${parent.handleChange} onFocus=${parent.handleChange} aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false' } 
+				ref=${el=> parent.activateValidation({"message":"This field is required.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
+							/>
+
+						<${validation.ErrorMessage} 
+				errors=${validation.errors} 
+				name="mf-email" 
+				as=${html`<span className="mf-error-message"><\/span>`}
+			/>
+			
+					<\/div>
+
+		<\/div>
+				<\/div>
+				<\/div>
+		<div className="elementor-element elementor-element-c71ba44 e-con-full e-flex e-con" data-id="c71ba44" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div className="elementor-element elementor-element-6f86bfd tr_join_button mf-btn--center elementor-widget elementor-widget-mf-button" data-id="6f86bfd" data-element_type="widget" data-widget_type="mf-button.default">
+				<div className="elementor-widget-container">
+					<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
+							<button type="submit" className="metform-btn metform-submit-btn " id="">
+					<span>${ parent.decodeEntities(`Subscribe Our Newsletter`) } <\/span>
+					<i aria-hidden="true" className="fas fa-arrow-right"><\/i>				<\/button>
+			        <\/div>
+        		<\/div>
+				<\/div>
+				<\/div>
+				<\/div>
+							<\/div>
+							`}
+					<\/div>
+
+					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
+					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+				
+				<\/form>
+			`
+		</script>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-092d8c2 e-con-full tr_join_image e-flex e-con"
+						data-id="092d8c2" data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+						<div class="elementor-element elementor-element-ad2d09c elementor-widget elementor-widget-image"
+							data-id="ad2d09c" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img decoding="async" width="800" height="800"
+									src="/wp-content/uploads/2023/07/join-island-1024x1024.jpg"
+									class="attachment-large size-large wp-image-274" alt=""
+									srcset="/wp-content/uploads/2023/07/join-island-1024x1024.jpg 1024w, /wp-content/uploads/2023/07/join-island-300x300.jpg 300w, /wp-content/uploads/2023/07/join-island-150x150.jpg 150w, /wp-content/uploads/2023/07/join-island-768x768.jpg 768w, /wp-content/uploads/2023/07/join-island.jpg 1200w"
+									sizes="(max-width: 800px) 100vw, 800px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c598e98 e-con-full e-flex e-con"
+							data-id="c598e98" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;gradient&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+						</div>
+					</div>
 				</div>
+			</div>
+		</div>
 
+		<footer itemtype="https://schema.org/WPFooter" itemscope="itemscope" id="colophon" role="contentinfo">
+			<div class="footer-width-fixer">
+				<div data-elementor-type="wp-post" data-elementor-id="317" class="elementor elementor-317">
+					<div class="elementor-element elementor-element-4e602cf e-flex e-con-boxed e-con" data-id="4e602cf"
+						data-element_type="container"
+						data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;content_width&quot;:&quot;boxed&quot;}">
+						<div class="e-con-inner">
+							<div class="elementor-element elementor-element-0730841 e-con-full e-flex e-con"
+								data-id="0730841" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-407d1bf elementor-widget elementor-widget-heading"
+									data-id="407d1bf" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h1 class="elementor-heading-title elementor-size-default"><a
+												href="/">Travel</a></h1>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-340e4ca elementor-widget elementor-widget-text-editor"
+									data-id="340e4ca" data-element_type="widget" data-widget_type="text-editor.default">
+									<div class="elementor-widget-container">
+										<p>Travel with us and explore<br>the world without limits.</p>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-c3febd4 e-con-full e-flex e-con"
+								data-id="c3febd4" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-14af39a elementor-widget elementor-widget-heading"
+									data-id="14af39a" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2 class="elementor-heading-title elementor-size-default">About</h2>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-bb7979b elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+									data-id="bb7979b" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<link rel="stylesheet"
+											href="/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1688380747">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<a href="#">
 
-				<div class="copyright show">
-					<p>Todos os direitos reservados</p>
+													<span class="elementor-icon-list-text">About Us</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Features</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">News & Blog</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-b41c676 e-con-full e-flex e-con"
+								data-id="b41c676" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-c32848c elementor-widget elementor-widget-heading"
+									data-id="c32848c" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2 class="elementor-heading-title elementor-size-default">Company</h2>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-68228d6 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+									data-id="68228d6" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">FAQs</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">History</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Testimonials</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-723f796 e-con-full e-flex e-con"
+								data-id="723f796" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-458653b elementor-widget elementor-widget-heading"
+									data-id="458653b" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2 class="elementor-heading-title elementor-size-default">Contact</h2>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-4a053af elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+									data-id="4a053af" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Call Center</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Support Center</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Contact Us</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-e41230d e-con-full e-flex e-con"
+								data-id="e41230d" data-element_type="container"
+								data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+								<div class="elementor-element elementor-element-84091b4 elementor-widget elementor-widget-heading"
+									data-id="84091b4" data-element_type="widget" data-widget_type="heading.default">
+									<div class="elementor-widget-container">
+										<h2 class="elementor-heading-title elementor-size-default">Support</h2>
+									</div>
+								</div>
+								<div class="elementor-element elementor-element-46e4e24 elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
+									data-id="46e4e24" data-element_type="widget" data-widget_type="icon-list.default">
+									<div class="elementor-widget-container">
+										<ul class="elementor-icon-list-items">
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Privacy Policy</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Terms & Services</span>
+												</a>
+											</li>
+											<li class="elementor-icon-list-item">
+												<a href="#">
+
+													<span class="elementor-icon-list-text">Payments</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</footer>
-
-		<script src="/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0"
-			id="hello-theme-frontend-js"></script>
-		<script src="/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=1.6.14"
-			id="hfe-frontend-js-js"></script>
-		<script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1"
-			id="elementor-webpack-runtime-js"></script>
-		<script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1"
-			id="elementor-frontend-modules-js"></script>
-		<script src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
-			id="elementor-waypoints-js"></script>
-		<script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
-		<script
-			id="elementor-frontend-js-before">var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Compartilhar no Facebook", "shareOnTwitter": "Compartilhar no Twitter", "pinIt": "Fixar", "download": "Baixar", "downloadImage": "Baixar imagem", "fullscreen": "Tela cheia", "zoom": "Zoom", "share": "Compartilhar", "playVideo": "Reproduzir vídeo", "previous": "Anterior", "next": "Próximo", "close": "Fechar", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Celular em modo retrato", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Celular em modo paisagem", "value": 880, "default_value": 880, "direction": "max", "is_enabled": true }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": true }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": true } } }, "version": "3.14.1", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "container": true, "e_swiper_latest": true, "hello-theme-header-footer": true, "landing-pages": true }, "urls": { "assets": "\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "body_background_background": "classic", "active_breakpoints": ["viewport_mobile", "viewport_mobile_extra", "viewport_tablet", "viewport_tablet_extra", "viewport_laptop", "viewport_widescreen"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "hello_header_logo_type": "title", "hello_header_menu_layout": "horizontal", "hello_footer_logo_type": "logo" }, "post": { "id": 6, "title": "Travel", "excerpt": "", "featuredImage": false } };</script>
-		<script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1"
-			id="elementor-frontend-js"></script>
-		<!-- TC Custom JavaScript -->
-		<script type="text/javascript">const header = document.querySelector(".j_header")
-			const mobileMenuIcon = document.querySelector(".j_mobile_menu .hfe-nav-menu-icon")
-			const mobileMenuList = document.querySelector(".j_mobile_menu .hfe-nav-menu__layout-horizontal")
-			const mobileMenuLinks = document.querySelectorAll(".j_mobile_menu .hfe-nav-menu a")
-
-			// Mobile menu
-			mobileMenuIcon.onclick = () => mobileMenuList.classList.toggle("show")
-			mobileMenuLinks.forEach(link => link.onclick = () => mobileMenuList.classList.remove("show"))
-
-			// Add blur to header on scroll
-			const headerBlur = () => window.scrollY > header.offsetHeight
-				? header.classList.add("blur")
-				: header.classList.remove("blur")
-
-			window.onscroll = headerBlur</script>
 	</div>
+	<!-- #page -->
+	<link rel="stylesheet" id="elementor-post-266-css"
+		href="/wp-content/uploads/elementor/css/post-266.css?ver=1688256547" media="all">
+	<link rel="stylesheet" id="metform-ui-css"
+		href="/wp-content/plugins/metform/public/assets/css/metform-ui.css?ver=3.3.3" media="all">
+	<link rel="stylesheet" id="metform-style-css"
+		href="/wp-content/plugins/metform/public/assets/css/style.css?ver=3.3.3" media="all">
+	<script src="/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0"
+		id="hello-theme-frontend-js"></script>
+	<script src="/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=1.6.14"
+		id="hfe-frontend-js-js"></script>
+	<script src="/wp-content/plugins/metform/public/assets/js/htm.js?ver=3.3.3" id="htm-js"></script>
+	<script src="/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+	<script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11"
+		id="regenerator-runtime-js"></script>
+	<script src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+	<script src="/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0" id="react-js"></script>
+	<script src="/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
+	<script src="/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6" id="wp-escape-html-js"></script>
+	<script src="/wp-includes/js/dist/element.min.js?ver=b3bda690cfc516378771" id="wp-element-js"></script>
+	<script
+		id="metform-app-js-extra">var mf = { "postType": "page", "restURI": "\/wp-json\/metform\/v1\/forms\/views\/" };</script>
+	<script src="/wp-content/plugins/metform/public/assets/js/app.js?ver=3.3.3" id="metform-app-js"></script>
+	<script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1"
+		id="elementor-webpack-runtime-js"></script>
+	<script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1"
+		id="elementor-frontend-modules-js"></script>
+	<script src="/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2"
+		id="elementor-waypoints-js"></script>
+	<script src="/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2" id="jquery-ui-core-js"></script>
+	<script
+		id="elementor-frontend-js-before">var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false, "isScriptDebug": false }, "i18n": { "shareOnFacebook": "Compartilhar no Facebook", "shareOnTwitter": "Compartilhar no Twitter", "pinIt": "Fixar", "download": "Baixar", "downloadImage": "Baixar imagem", "fullscreen": "Tela cheia", "zoom": "Zoom", "share": "Compartilhar", "playVideo": "Reproduzir vídeo", "previous": "Anterior", "next": "Próximo", "close": "Fechar", "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right", "a11yCarouselPrevSlideMessage": "Previous slide", "a11yCarouselNextSlideMessage": "Next slide", "a11yCarouselFirstSlideMessage": "This is the first slide", "a11yCarouselLastSlideMessage": "This is the last slide", "a11yCarouselPaginationBulletMessage": "Go to slide" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "responsive": { "breakpoints": { "mobile": { "label": "Celular em modo retrato", "value": 767, "default_value": 767, "direction": "max", "is_enabled": true }, "mobile_extra": { "label": "Celular em modo paisagem", "value": 880, "default_value": 880, "direction": "max", "is_enabled": true }, "tablet": { "label": "Tablet Portrait", "value": 1024, "default_value": 1024, "direction": "max", "is_enabled": true }, "tablet_extra": { "label": "Tablet Landscape", "value": 1200, "default_value": 1200, "direction": "max", "is_enabled": true }, "laptop": { "label": "Laptop", "value": 1366, "default_value": 1366, "direction": "max", "is_enabled": true }, "widescreen": { "label": "Widescreen", "value": 2400, "default_value": 2400, "direction": "min", "is_enabled": true } } }, "version": "3.14.1", "is_static": false, "experimentalFeatures": { "e_dom_optimization": true, "e_optimized_assets_loading": true, "e_optimized_css_loading": true, "a11y_improvements": true, "additional_custom_breakpoints": true, "container": true, "e_swiper_latest": true, "hello-theme-header-footer": true, "landing-pages": true }, "urls": { "assets": "\/wp-content\/plugins\/elementor\/assets\/" }, "swiperClass": "swiper", "settings": { "page": [], "editorPreferences": [] }, "kit": { "body_background_background": "classic", "active_breakpoints": ["viewport_mobile", "viewport_mobile_extra", "viewport_tablet", "viewport_tablet_extra", "viewport_laptop", "viewport_widescreen"], "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description", "hello_header_logo_type": "title", "hello_header_menu_layout": "horizontal", "hello_footer_logo_type": "logo" }, "post": { "id": 6, "title": "Travel", "excerpt": "", "featuredImage": false } };</script>
+	<script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1"
+		id="elementor-frontend-js"></script>
+	<!-- TC Custom JavaScript -->
+	<script type="text/javascript">const header = document.querySelector(".j_header")
+		const mobileMenuIcon = document.querySelector(".j_mobile_menu .hfe-nav-menu-icon")
+		const mobileMenuList = document.querySelector(".j_mobile_menu .hfe-nav-menu__layout-horizontal")
+		const mobileMenuLinks = document.querySelectorAll(".j_mobile_menu .hfe-nav-menu a")
+
+		// Mobile menu
+		mobileMenuIcon.onclick = () => mobileMenuList.classList.toggle("show")
+		mobileMenuLinks.forEach(link => link.onclick = () => mobileMenuList.classList.remove("show"))
+
+		// Add blur to header on scroll
+		const headerBlur = () => window.scrollY > header.offsetHeight
+			? header.classList.add("blur")
+			: header.classList.remove("blur")
+
+		window.onscroll = headerBlur</script>
 </body>
 
 </html>
