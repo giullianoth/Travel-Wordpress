@@ -444,6 +444,20 @@
 	<link rel="apple-touch-icon" href="/wp-content/uploads/2023/06/favicon.png">
 	<meta name="msapplication-TileImage" content="/wp-content/uploads/2023/06/favicon.png">
 	<style id="wp-custom-css">
+		/* Header */
+		.tr_header.scrolling::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: hsla(0, 0%, 0%, 0.3);
+			backdrop-filter: blur(24px);
+			-webkit-backdrop-filter: blur(24px);
+			z-index: -1;
+		}
+
 		/* Desktop menu */
 		.tr_desktop_menu .hfe-nav-menu {
 			column-gap: 30px;
@@ -462,7 +476,7 @@
 			padding-block: 60px;
 			backdrop-filter: blur(24px);
 			-webkit-backdrop-filter: blur(24px);
-			background: hsla(0, 0%, 0%, 0.3) !important;
+			background-color: hsla(0, 0%, 0%, 0.3) !important;
 			transition: top 0.3s ease;
 		}
 
@@ -1030,13 +1044,25 @@
 		<script src="/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.14.1"
 			id="elementor-frontend-js"></script>
 		<!-- TC Custom JavaScript -->
-		<script type="text/javascript">const mobileMenu = document.querySelector(".j_mobile_menu .hfe-nav-menu__layout-horizontal")
+		<script type="text/javascript">const headerSection = document.querySelector(".j_header")
+			const mobileMenu = document.querySelector(".j_mobile_menu .hfe-nav-menu__layout-horizontal")
 			const mobileMenuIcon = document.querySelector(".j_mobile_menu .hfe-nav-menu-icon")
 			const mobileMenuLinks = mobileMenu.querySelectorAll(".hfe-menu-item")
 
+			// Add header background on scrolling
+			const headerBackground = () => window.scrollY > headerSection.offsetHeight
+				? headerSection.classList.add("scrolling")
+				: headerSection.classList.remove("scrolling")
+
 			// Mobile menu features
 			mobileMenuIcon.onclick = () => mobileMenu.classList.toggle("show")
-			mobileMenuLinks.forEach(link => link.onclick = () => mobileMenu.classList.remove("show"))</script>
+			mobileMenuLinks.forEach(link => link.onclick = () => mobileMenu.classList.remove("show"))
+
+			headerBackground()
+
+			window.onscroll = () => {
+				headerBackground()
+			}</script>
 	</div>
 </body>
 
