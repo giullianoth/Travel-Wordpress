@@ -387,7 +387,7 @@
 	<link rel="stylesheet" id="elementor-global-css" href="/wp-content/uploads/elementor/css/global.css?ver=1688909125"
 		media="all">
 	<link rel="stylesheet" id="elementor-post-390-css"
-		href="/wp-content/uploads/elementor/css/post-390.css?ver=1688932695" media="all">
+		href="/wp-content/uploads/elementor/css/post-390.css?ver=1688937467" media="all">
 	<link rel="stylesheet" id="hfe-widgets-style-css"
 		href="/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.14" media="all">
 	<link rel="stylesheet" id="font-awesome-5-all-css"
@@ -515,11 +515,13 @@
 			-webkit-backdrop-filter: blur(24px);
 		}
 
-		.tr_button .elementor-button .elementor-button-icon i {
+		.tr_button .elementor-button .elementor-button-icon i,
+		.tr_button .metform-btn i {
 			transition: transform 0.3s ease;
 		}
 
-		.tr_button .elementor-button:hover .elementor-button-icon i {
+		.tr_button .elementor-button:hover .elementor-button-icon i,
+		.tr_button .metform-btn:hover i {
 			transform: translateX(5px);
 		}
 
@@ -530,6 +532,15 @@
 
 		.tr_card_image:hover img {
 			transform: scale(1.2);
+		}
+
+		/* Explore section */
+		.tr_explore_image_shadow {
+			background-image: linear-gradient(180deg, hsl(0, 0%, 0%) 5%, hsla(0, 0%, 0%, 0) 40%, hsla(0, 0%, 0%, 0) 60%, hsl(0, 0%, 0%) 92%)
+		}
+
+		.tr_explore_user_name p {
+			margin: 0;
 		}
 	</style>
 </head>
@@ -1210,6 +1221,241 @@
 					</div>
 				</div>
 			</section>
+			<section class="elementor-element elementor-element-9a4d141 e-flex e-con-boxed e-con" data-id="9a4d141"
+				data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+				<div class="e-con-inner">
+					<div class="elementor-element elementor-element-01bcb5a e-con-full e-flex e-con" data-id="01bcb5a"
+						data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+						<div class="elementor-element elementor-element-ad103b7 elementor-widget elementor-widget-image"
+							data-id="ad103b7" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img decoding="async" width="800" height="334"
+									src="/wp-content/uploads/2023/07/explore-beach-1024x427.jpg"
+									class="attachment-large size-large wp-image-250" alt=""
+									srcset="/wp-content/uploads/2023/07/explore-beach-1024x427.jpg 1024w, /wp-content/uploads/2023/07/explore-beach-300x125.jpg 300w, /wp-content/uploads/2023/07/explore-beach-768x320.jpg 768w, /wp-content/uploads/2023/07/explore-beach-1536x640.jpg 1536w, /wp-content/uploads/2023/07/explore-beach.jpg 1920w"
+									sizes="(max-width: 800px) 100vw, 800px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-c2b26aa e-con-full tr_explore_image_shadow e-flex e-con"
+							data-id="c2b26aa" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-2e713c5 e-con-full e-flex e-con" data-id="2e713c5"
+						data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+						<div class="elementor-element elementor-element-aaaaf29 e-con-full e-flex e-con"
+							data-id="aaaaf29" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+							<div class="elementor-element elementor-element-69c1150 elementor-widget elementor-widget-heading"
+								data-id="69c1150" data-element_type="widget" data-widget_type="heading.default">
+								<div class="elementor-widget-container">
+									<h1 class="elementor-heading-title elementor-size-default">Explore The <br> Best
+										Paradises</h1>
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-7b2edbe elementor-widget elementor-widget-text-editor"
+								data-id="7b2edbe" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									<p>Exploring paradises such as islands and valleys when traveling the world is one
+										of the greatest experiences when you travel, it offers you harmony and peace and
+										you can enjoy it with great comfort.</p>
+								</div>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-a61cdff e-con-full e-flex e-con"
+							data-id="a61cdff" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+							<div class="elementor-element elementor-element-63a9209 elementor-widget elementor-widget-image"
+								data-id="63a9209" data-element_type="widget" data-widget_type="image.default">
+								<div class="elementor-widget-container">
+									<img decoding="async" width="200" height="200"
+										src="/wp-content/uploads/2023/07/explore-perfil.png"
+										class="attachment-large size-large wp-image-256" alt=""
+										srcset="/wp-content/uploads/2023/07/explore-perfil.png 200w, /wp-content/uploads/2023/07/explore-perfil-150x150.png 150w"
+										sizes="(max-width: 200px) 100vw, 200px">
+								</div>
+							</div>
+							<div class="elementor-element elementor-element-2c21134 tr_explore_user_name elementor-widget elementor-widget-text-editor"
+								data-id="2c21134" data-element_type="widget" data-widget_type="text-editor.default">
+								<div class="elementor-widget-container">
+									<p>Paul Jeams</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="elementor-element elementor-element-7bdb5dc e-flex e-con-boxed e-con" data-id="7bdb5dc"
+				data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;boxed&quot;}">
+				<div class="e-con-inner">
+					<div class="elementor-element elementor-element-e4ca169 e-con-full e-flex e-con" data-id="e4ca169"
+						data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+						<div class="elementor-element elementor-element-3fd0a38 elementor-widget elementor-widget-heading"
+							data-id="3fd0a38" data-element_type="widget" data-widget_type="heading.default">
+							<div class="elementor-widget-container">
+								<h1 class="elementor-heading-title elementor-size-default">Your Journey <br>Starts Here
+								</h1>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-912cd43 elementor-widget elementor-widget-text-editor"
+							data-id="912cd43" data-element_type="widget" data-widget_type="text-editor.default">
+							<div class="elementor-widget-container">
+								<p>Get up to date with the latest travel and information from us.</p>
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-647c186 e-con-full e-flex e-con"
+							data-id="647c186" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+							<div class="elementor-element elementor-element-6e0a9af elementor-widget elementor-widget-metform"
+								data-id="6e0a9af" data-element_type="widget" data-widget_type="metform.default">
+								<div class="elementor-widget-container">
+									<div id="mf-response-props-id-266" data-previous-steps-style=""
+										data-editswitchopen="" data-response_type="alert"
+										data-erroricon="fas fa-exclamation-triangle" data-successicon="fas fa-check"
+										data-messageposition="top" class="   mf-scroll-top-no">
+										<div class="formpicker_warper formpicker_warper_editable"
+											data-metform-formpicker-key="266">
+
+											<div class="elementor-widget-container">
+
+												<div id="metform-wrap-6e0a9af-266" class="mf-form-wrapper"
+													data-form-id="266"
+													data-action="http://localhost/travel/wp-json/metform/v1/entries/insert/266"
+													data-wp-nonce="94c954954d" data-form-nonce="eddc7afea0"
+													data-quiz-summery="false" data-save-progress="false"
+													data-form-type="general-form" data-stop-vertical-effect=""></div>
+
+
+												<!----------------------------- 
+			* controls_data : find the the props passed indie of data attribute
+			* props.SubmitResponseMarkup : contains the markup of error or success message
+			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+		--------------------------- -->
+
+												<script type="text/mf" class="mf-template">
+			function controls_data (value){
+				let currentWrapper = "mf-response-props-id-266";
+				let currentEl = document.getElementById(currentWrapper);
+				
+				return currentEl ? currentEl.dataset[value] : false
+			}
+
+
+			let is_edit_mode = '' ? true : false;
+			let message_position = controls_data('messageposition') || 'top';
+
+			
+			let message_successIcon = controls_data('successicon') || '';
+			let message_errorIcon = controls_data('erroricon') || '';
+			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
+			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
+			
+			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
+
+			
+			return html`
+				<form
+					className="metform-form-content"
+					ref=${parent.formContainerRef}
+					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
+				
+					>
+			
+			
+					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
+					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+
+					<!--------------------------------------------------------
+					*** IMPORTANT / DANGEROUS ***
+					${html``} must be used as in immediate child of "metform-form-main-wrapper"
+					class otherwise multistep form will not run at all
+					---------------------------------------------------------->
+
+					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
+					${html`
+								<div data-elementor-type="wp-post" key="2" data-elementor-id="266" className="elementor elementor-266">
+							<div className="elementor-element elementor-element-80138d0 e-con-full e-flex e-con" data-id="80138d0" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+		<div className="elementor-element elementor-element-1cf1f92 e-con-full e-flex e-con" data-id="1cf1f92" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div className="elementor-element elementor-element-3d9c567 elementor-widget elementor-widget-mf-email" data-id="3d9c567" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;}" data-widget_type="mf-email.default">
+				<div className="elementor-widget-container">
+			
+		<div className="mf-input-wrapper">
+			
+			<input 
+				type="email" 
+				 
+				defaultValue="" 
+				className="mf-input " 
+				id="mf-input-email-3d9c567" 
+				name="mf-email" 
+				placeholder="${ parent.decodeEntities(`Enter your email`) } " 
+				 
+				onBlur=${parent.handleChange} onFocus=${parent.handleChange} aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false' } 
+				ref=${el=> parent.activateValidation({"message":"This field is required.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":false,"expression":"null"}, el)}
+							/>
+
+						<${validation.ErrorMessage} 
+				errors=${validation.errors} 
+				name="mf-email" 
+				as=${html`<span className="mf-error-message"><\/span>`}
+			/>
+			
+					<\/div>
+
+		<\/div>
+				<\/div>
+				<\/div>
+		<div className="elementor-element elementor-element-c71ba44 e-con-full e-flex e-con" data-id="c71ba44" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+				<div className="elementor-element elementor-element-6f86bfd tr_button mf-btn--justify mf-btn--tablet-justify mf-btn--mobile-justify elementor-widget elementor-widget-mf-button" data-id="6f86bfd" data-element_type="widget" data-widget_type="mf-button.default">
+				<div className="elementor-widget-container">
+					<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
+							<button type="submit" className="metform-btn metform-submit-btn " id="">
+					<span>${ parent.decodeEntities(`Subscribe Our Newsletter`) } <\/span>
+					<i aria-hidden="true" className="fas fa-arrow-right"><\/i>				<\/button>
+			        <\/div>
+        		<\/div>
+				<\/div>
+				<\/div>
+				<\/div>
+							<\/div>
+							`}
+					<\/div>
+
+					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
+					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+				
+				<\/form>
+			`
+		</script>
+
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="elementor-element elementor-element-3d9554b e-con-full tr_card_image e-flex e-con"
+						data-id="3d9554b" data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;full&quot;}">
+						<div class="elementor-element elementor-element-7af9ac3 elementor-widget elementor-widget-image"
+							data-id="7af9ac3" data-element_type="widget" data-widget_type="image.default">
+							<div class="elementor-widget-container">
+								<img decoding="async" width="800" height="800"
+									src="/wp-content/uploads/2023/07/join-island-1024x1024.jpg"
+									class="attachment-large size-large wp-image-274" alt=""
+									srcset="/wp-content/uploads/2023/07/join-island-1024x1024.jpg 1024w, /wp-content/uploads/2023/07/join-island-300x300.jpg 300w, /wp-content/uploads/2023/07/join-island-150x150.jpg 150w, /wp-content/uploads/2023/07/join-island-768x768.jpg 768w, /wp-content/uploads/2023/07/join-island.jpg 1200w"
+									sizes="(max-width: 800px) 100vw, 800px">
+							</div>
+						</div>
+						<div class="elementor-element elementor-element-8f49281 e-con-full e-flex e-con"
+							data-id="8f49281" data-element_type="container"
+							data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;gradient&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+						</div>
+					</div>
+				</div>
+			</section>
 		</div>
 		<footer id="site-footer" class="site-footer dynamic-footer footer-has-copyright" role="contentinfo">
 			<div class="footer-inner">
@@ -1223,10 +1469,28 @@
 			</div>
 		</footer>
 
+		<link rel="stylesheet" id="elementor-post-266-css"
+			href="/wp-content/uploads/elementor/css/post-266.css?ver=1688936939" media="all">
+		<link rel="stylesheet" id="metform-ui-css"
+			href="/wp-content/plugins/metform/public/assets/css/metform-ui.css?ver=3.3.3" media="all">
+		<link rel="stylesheet" id="metform-style-css"
+			href="/wp-content/plugins/metform/public/assets/css/style.css?ver=3.3.3" media="all">
 		<script src="/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=1.0.0"
 			id="hello-theme-frontend-js"></script>
 		<script src="/wp-content/plugins/header-footer-elementor/inc/js/frontend.js?ver=1.6.14"
 			id="hfe-frontend-js-js"></script>
+		<script src="/wp-content/plugins/metform/public/assets/js/htm.js?ver=3.3.3" id="htm-js"></script>
+		<script src="/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+		<script src="/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.13.11"
+			id="regenerator-runtime-js"></script>
+		<script src="/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+		<script src="/wp-includes/js/dist/vendor/react.min.js?ver=18.2.0" id="react-js"></script>
+		<script src="/wp-includes/js/dist/vendor/react-dom.min.js?ver=18.2.0" id="react-dom-js"></script>
+		<script src="/wp-includes/js/dist/escape-html.min.js?ver=03e27a7b6ae14f7afaa6" id="wp-escape-html-js"></script>
+		<script src="/wp-includes/js/dist/element.min.js?ver=b3bda690cfc516378771" id="wp-element-js"></script>
+		<script
+			id="metform-app-js-extra">var mf = { "postType": "page", "restURI": "\/wp-json\/metform\/v1\/forms\/views\/" };</script>
+		<script src="/wp-content/plugins/metform/public/assets/js/app.js?ver=3.3.3" id="metform-app-js"></script>
 		<script src="/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.14.1"
 			id="elementor-webpack-runtime-js"></script>
 		<script src="/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.14.1"
