@@ -40,11 +40,11 @@ img.emoji {
 <link rel="stylesheet" id="swiper-css" href="/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5" media="all">
 <link rel="stylesheet" id="elementor-post-5-css" href="/wp-content/uploads/elementor/css/post-5.css?ver=1688909120" media="all">
 <link rel="stylesheet" id="elementor-global-css" href="/wp-content/uploads/elementor/css/global.css?ver=1688909125" media="all">
-<link rel="stylesheet" id="elementor-post-12-css" href="/wp-content/uploads/elementor/css/post-12.css?ver=1688919663" media="all">
 <link rel="stylesheet" id="hfe-widgets-style-css" href="/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1.6.14" media="all">
 <link rel="stylesheet" id="font-awesome-5-all-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.14.1" media="all">
 <link rel="stylesheet" id="font-awesome-4-shim-css" href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.14.1" media="all">
-<link rel="stylesheet" id="elementor-post-631-css" href="/wp-content/uploads/elementor/css/post-631.css?ver=1688943660" media="all">
+<link rel="stylesheet" id="elementor-post-12-css" href="/wp-content/uploads/elementor/css/post-12.css?ver=1688985385" media="all">
+<link rel="stylesheet" id="elementor-post-631-css" href="/wp-content/uploads/elementor/css/post-631.css?ver=1688985344" media="all">
 <link rel="stylesheet" id="hello-elementor-css" href="/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1" media="all">
 <link rel="stylesheet" id="hello-elementor-theme-style-css" href="/wp-content/themes/hello-elementor/theme.min.css?ver=2.8.1" media="all">
 <link rel="stylesheet" id="google-fonts-1-css" href="https://fonts.googleapis.com/css?family=Montserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap&#038;ver=6.2.2" media="all">
@@ -140,7 +140,20 @@ img.emoji {
 { background-image: linear-gradient(180deg, hsl(0, 0%, 0%) 5%, hsla(0, 0%, 0%, 0) 40%, hsla(0, 0%, 0%, 0) 60%, hsl(0, 0%, 0%) 92%) }
 
 .tr_explore_user_name p
-{ margin: 0; }</style>
+{ margin: 0; }
+
+/* Scroll up button */
+.tr_scroll_up
+{ backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); transition: 0.3s; }
+
+.tr_scroll_up:hover
+{ transform: translateY(-10px); }
+
+.tr_scroll_up .elementor-icon-wrapper
+{ line-height: 1; }
+
+.tr_scroll_up.show
+{ bottom: 20px !important; }</style>
 		</head>
 
 <body class="post-template-default single single-post postid-1 single-format-standard ehf-header ehf-footer ehf-template-hello-elementor ehf-stylesheet-hello-elementor elementor-default elementor-kit-5">
@@ -450,6 +463,16 @@ Os avatares dos comentaristas vêm do <a href="https://br.gravatar.com/">Gravata
 				</div>
 					</div>
 				</div>
+		<a class="elementor-element elementor-element-374877e e-con-full tr_scroll_up j_scroll_up e-flex e-con" data-id="374877e" data-element_type="container" data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;fixed&quot;}" href="#home">
+				<div class="elementor-element elementor-element-ebdf96b elementor-view-default elementor-widget elementor-widget-icon" data-id="ebdf96b" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-arrow-up"></i>			</div>
+		</div>
+				</div>
+				</div>
+				</a>
 							</div>
 		</div>		</footer>
 	</div>
@@ -468,6 +491,7 @@ Os avatares dos comentaristas vêm do <a href="https://br.gravatar.com/">Gravata
 const mobileMenu = document.querySelector(".j_mobile_menu .hfe-nav-menu__layout-horizontal")
 const mobileMenuIcon = document.querySelector(".j_mobile_menu .hfe-nav-menu-icon")
 const mobileMenuLinks = mobileMenu.querySelectorAll(".hfe-menu-item")
+const scrollUpButton = document.querySelector(".j_scroll_up")
 
 // Add header background on scrolling
 const headerBackground = () => window.scrollY > headerSection.offsetHeight
@@ -478,10 +502,16 @@ const headerBackground = () => window.scrollY > headerSection.offsetHeight
 mobileMenuIcon.onclick = () => mobileMenu.classList.toggle("show")
 mobileMenuLinks.forEach(link => link.onclick = () => mobileMenu.classList.remove("show"))
 
+// Show scroll up button
+const showScrollUp = () => window.scrollY > 350
+	? scrollUpButton.classList.add("show")
+	: scrollUpButton.classList.remove("show")
+
 headerBackground()
 
 window.onscroll = () => {
   headerBackground()
+  showScrollUp()
 }</script>
 </body>
 </html>

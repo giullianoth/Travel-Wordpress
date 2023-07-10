@@ -395,9 +395,9 @@
 	<link rel="stylesheet" id="font-awesome-4-shim-css"
 		href="/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.14.1" media="all">
 	<link rel="stylesheet" id="elementor-post-12-css"
-		href="/wp-content/uploads/elementor/css/post-12.css?ver=1688919663" media="all">
+		href="/wp-content/uploads/elementor/css/post-12.css?ver=1688985207" media="all">
 	<link rel="stylesheet" id="elementor-post-631-css"
-		href="/wp-content/uploads/elementor/css/post-631.css?ver=1688943660" media="all">
+		href="/wp-content/uploads/elementor/css/post-631.css?ver=1688985344" media="all">
 	<link rel="stylesheet" id="hello-elementor-css" href="/wp-content/themes/hello-elementor/style.min.css?ver=2.8.1"
 		media="all">
 	<link rel="stylesheet" id="hello-elementor-theme-style-css"
@@ -545,6 +545,25 @@
 
 		.tr_explore_user_name p {
 			margin: 0;
+		}
+
+		/* Scroll up button */
+		.tr_scroll_up {
+			backdrop-filter: blur(24px);
+			-webkit-backdrop-filter: blur(24px);
+			transition: 0.3s;
+		}
+
+		.tr_scroll_up:hover {
+			transform: translateY(-10px);
+		}
+
+		.tr_scroll_up .elementor-icon-wrapper {
+			line-height: 1;
+		}
+
+		.tr_scroll_up.show {
+			bottom: 20px !important;
 		}
 	</style>
 </head>
@@ -1326,7 +1345,7 @@
 												<div id="metform-wrap-6e0a9af-266" class="mf-form-wrapper"
 													data-form-id="266"
 													data-action="http://localhost/travel/wp-json/metform/v1/entries/insert/266"
-													data-wp-nonce="94c954954d" data-form-nonce="eddc7afea0"
+													data-wp-nonce="38d73a8b9c" data-form-nonce="3c685de99a"
 													data-quiz-summery="false" data-save-progress="false"
 													data-form-type="general-form" data-stop-vertical-effect=""></div>
 
@@ -2016,6 +2035,21 @@
 							</div>
 						</div>
 					</div>
+					<a class="elementor-element elementor-element-374877e e-con-full tr_scroll_up j_scroll_up e-flex e-con"
+						data-id="374877e" data-element_type="container"
+						data-settings="{&quot;content_width&quot;:&quot;full&quot;,&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;fixed&quot;}"
+						href="#home">
+						<div class="elementor-element elementor-element-ebdf96b elementor-view-default elementor-widget elementor-widget-icon"
+							data-id="ebdf96b" data-element_type="widget" data-widget_type="icon.default">
+							<div class="elementor-widget-container">
+								<div class="elementor-icon-wrapper">
+									<div class="elementor-icon">
+										<i aria-hidden="true" class="fas fa-arrow-up"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</a>
 				</div>
 			</div>
 		</footer>
@@ -2061,6 +2095,7 @@
 		const mobileMenu = document.querySelector(".j_mobile_menu .hfe-nav-menu__layout-horizontal")
 		const mobileMenuIcon = document.querySelector(".j_mobile_menu .hfe-nav-menu-icon")
 		const mobileMenuLinks = mobileMenu.querySelectorAll(".hfe-menu-item")
+		const scrollUpButton = document.querySelector(".j_scroll_up")
 
 		// Add header background on scrolling
 		const headerBackground = () => window.scrollY > headerSection.offsetHeight
@@ -2071,10 +2106,16 @@
 		mobileMenuIcon.onclick = () => mobileMenu.classList.toggle("show")
 		mobileMenuLinks.forEach(link => link.onclick = () => mobileMenu.classList.remove("show"))
 
+		// Show scroll up button
+		const showScrollUp = () => window.scrollY > 350
+			? scrollUpButton.classList.add("show")
+			: scrollUpButton.classList.remove("show")
+
 		headerBackground()
 
 		window.onscroll = () => {
 			headerBackground()
+			showScrollUp()
 		}</script>
 </body>
 
